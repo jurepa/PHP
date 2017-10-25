@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="ISO-8859-1">
+        <title>Churruca School</title>
+    </head>
+    <h1><a>Colegio Churruca</a></h1>
+    <hr width="100%">
+    <body>
+
+        <form action="MostrarRellenarAlumnos.php"name="Formulario" method="post">
+            <fieldset>
+                <legend>Alumnos</legend>
+                <br>Cuantos alumnos quieres registrar? <input type="number" name="numAlumnos">
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </body>
+</html>

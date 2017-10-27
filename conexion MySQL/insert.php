@@ -15,7 +15,7 @@ if ($conexion->connect_error)
 {
     trigger_error("Failed to connect to MySQL: " . $conexion->connect_error, E_USER_ERROR);
 }
-$sql="INSERT INTO BOLETOS  VALUES((SELECT MAX(ID)FROM BOLETOS)+1,'2029-08-18 13:00:00', 20)";
+$sql="INSERT INTO Boletos  VALUES((SELECT MAX(ID)FROM Boletos)+1,'2029-08-18 13:00:00', 20)";
 $consultaDelInsert="SELECT * FROM BOLETOS WHERE ID=(SELECT MAX(ID) FROM BOLETOS)";
 $resultInsert=$conexion->query($sql);
 $result = $conexion->query($consultaDelInsert);

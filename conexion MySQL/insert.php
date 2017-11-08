@@ -10,20 +10,20 @@
 
 <body>
 <?php
-$conexion=new mysqli('localhost','pjarana','pjarana','Ejemplo');
+$conexion=new mysqli('localhost','pepito','qq','Ejemplo');
 if ($conexion->connect_error)
 {
     trigger_error("Failed to connect to MySQL: " . $conexion->connect_error, E_USER_ERROR);
 }
-$sql="INSERT INTO Boletos  VALUES((SELECT MAX(ID)FROM Boletos)+1,'2029-08-18 13:00:00', 20)";
-$consultaDelInsert="SELECT * FROM BOLETOS WHERE ID=(SELECT MAX(ID) FROM BOLETOS)";
-$resultInsert=$conexion->query($sql);
+$sql="INSERT INTO Usuario (ID,Nombre,Apellidos,Edad) VALUES(NULL, 'Molthen','Wood5',24)";
+$consultaDelInsert="SELECT ID,Nombre,Apellidos,Edad FROM Usuario";
+//$resultInsert=$conexion->query($sql);
 $result = $conexion->query($consultaDelInsert);
 if ($result->num_rows > 0)
 {
     while($row=$result->fetch_assoc())
     {
-        echo "<li>ID boleto: " . $row["ID"]. " - Fecha_Sorteo: " . $row["Fecha_Sorteo"]. " - Precio: " .$row["Precio"]. "</li><br>";
+        echo "<li>ID usuario: " . $row["ID"]. " - Nombre: " . $row["Nombre"]. " - Apellidos: " .$row["Apellidos"]. " - Edad: " .$row["Edad"]."</li><br>";
     }
 } else
 {

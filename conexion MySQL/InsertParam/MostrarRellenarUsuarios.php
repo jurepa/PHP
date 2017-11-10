@@ -21,7 +21,7 @@
     }
 
     ?>
-    <input type="hidden" name="numUsuarios" value="$numUsuarios" />
+    <input type="hidden" name="numUsuarios" value=$numUsuarios />
     <input type="submit" name="enviar">
 </form>
 <!-- Falta botón enviar-->

@@ -9,7 +9,24 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="sentenciasPreparadas.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/conexion MySQL/InsertParam/sentenciasPreparadas.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+              <folding>
+                <marker date="1510491226288" expanded="true" signature="480:612" ph="INSERT INTO Usuario... " />
+                <marker date="1510491226288" expanded="true" signature="676:758" ph="SELECT ID,No... Usuario" />
+                <marker date="1510491226288" expanded="true" signature="731:757" ph="SELECT MAX(I... Usuario" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -21,8 +38,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
-    <option name="y" value="47" />
+    <option name="x" value="136" />
+    <option name="y" value="111" />
     <option name="width" value="1346" />
     <option name="height" value="701" />
   </component>
@@ -43,11 +60,44 @@
     <panes>
       <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PHP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PHP" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="PHP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PHP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="conexion MySQL" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="PHP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PHP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="conexion MySQL" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="InsertParam" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="PHP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PHP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Formulario Alumnos OO" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="PHP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PHP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Prueba" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -73,16 +123,18 @@
       <updated>1508486172625</updated>
       <workItem from="1508486175211" duration="26000" />
       <workItem from="1508486237401" duration="14000" />
+      <workItem from="1510506942254" duration="28000" />
+      <workItem from="1510506988906" duration="19000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40000" />
+    <option name="totallyTimeSpent" value="87000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="47" width="1346" height="701" extended-state="0" />
+    <frame x="136" y="111" width="1346" height="701" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962853" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962406" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -102,7 +154,7 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -110,5 +162,19 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/conexion MySQL/InsertParam/sentenciasPreparadas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+          <folding>
+            <marker date="1510491226288" expanded="true" signature="480:612" ph="INSERT INTO Usuario... " />
+            <marker date="1510491226288" expanded="true" signature="676:758" ph="SELECT ID,No... Usuario" />
+            <marker date="1510491226288" expanded="true" signature="731:757" ph="SELECT MAX(I... Usuario" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

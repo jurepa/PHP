@@ -7,7 +7,7 @@
 <h1><a>Colegio Churruca</a></h1>
 <hr width="100%">
 <body>
-<form action="sentenciasPreparadas.php" method="post">
+<form action="insertsUsuarios.php" method="post">
     <?php
     $numUsuarios=$_POST["numUsuarios"]; //Para volver a enviar el num de alumnos: <input type="Hidden" name="numAlumno" value="$_POST["numAlumnos"]">
     $i=0;

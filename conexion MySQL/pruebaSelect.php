@@ -15,13 +15,13 @@ if ($conexion->connect_error)
 {
     trigger_error("Failed to connect to MySQL: " . $conexion->connect_error, E_USER_ERROR);
 }
-$sql="Select * from Boletos";
+$sql="Select * from Usuario";
 $result = $conexion->query($sql);
 if ($result->num_rows > 0)
 {
     while($row=$result->fetch_assoc())
     {
-        echo "<li>ID boleto: " . $row["ID"]. " - Fecha_Sorteo: " . $row["Fecha_Sorteo"]. " - Precio: " .$row["Precio"]. "</li><br>";
+        echo "<li>ID usuario: " . $row["ID"] . " - Nombre: " . $row["Nombre"] . " - Apellidos: " . $row["Apellidos"] . " - Edad: " . $row["Edad"] . "</li><br>";
     }
 } else
 {

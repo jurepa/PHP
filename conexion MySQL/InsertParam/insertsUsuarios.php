@@ -5,7 +5,7 @@
  * Date: 8/11/17
  * Time: 9:52
  */
-$conexion=new mysqli('localhost','root','','ejemplo');
+$conexion=new mysqli('localhost','pjarana','pjarana','Ejemplo');
 if ($conexion->connect_error)
 {
     trigger_error("Failed to connect to MySQL: " . $conexion->connect_error, E_USER_ERROR);
@@ -16,9 +16,10 @@ $apellidoUsuario=$_POST["apellidoUsuario"];
 $edadUsuario=$_POST["edadUsuario"];
 for($i=0;$i<count($edadUsuario);$i++)
 {
-    $insert='INSERT INTO usuario (ID,Nombre,Apellidos,Edad) VALUES (NULL ,'.$nombreUsuario[$i].', '.$apellidoUsuario[$i].', '.$edadUsuario[$i].')';
+    $insert="INSERT INTO Usuario (Nombre,Apellidos,Edad) VALUES ('$nombreUsuario[$i]','$apellidoUsuario[$i]', $edadUsuario[$i])";
     $resultinsert=$conexion->query($insert);
-    $consulta=('SELECT ID,Nombre,Apellidos,Edad FROM Usuario WHERE ID=(SELECT MAX(ID)FROM usuario)');
+    echo $conexion->error;
+    $consulta=('SELECT ID,Nombre,Apellidos,Edad FROM Usuario WHERE ID=(SELECT MAX(ID)FROM Usuario)');
 
     $result=$conexion->query($consulta);
     if($result->num_rows>0)

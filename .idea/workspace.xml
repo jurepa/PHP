@@ -11,15 +11,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="insertsUsuarios.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="insertsUsuarios.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conexion MySQL/InsertParam/insertsUsuarios.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+            <state relative-caret-position="0">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="11" selection-end-column="1" />
               <folding>
-                <marker date="1510593631874" expanded="true" signature="476:608" ph="INSERT INTO Usuario... " />
-                <marker date="1510593631874" expanded="true" signature="672:754" ph="SELECT ID,No... Usuario" />
-                <marker date="1510593631874" expanded="true" signature="727:753" ph="SELECT MAX(I... Usuario" />
+                <marker date="1510855053456" expanded="true" signature="486:600" ph="INSERT INTO Usuario... " />
+                <marker date="1510855053456" expanded="true" signature="691:773" ph="SELECT ID,No... Usuario" />
+                <marker date="1510855053456" expanded="true" signature="766:772" ph="SELECT MAX(I... Usuario" />
+                <marker date="1510855053456" expanded="true" signature="766:773" ph="SELECT ID,No... Usuario" />
               </folding>
             </state>
           </provider>
@@ -28,19 +29,54 @@
       <file leaf-file-name="Form.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conexion MySQL/InsertParam/Form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="18" column="7" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="18" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MostrarRellenarUsuarios.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conexion MySQL/InsertParam/MostrarRellenarUsuarios.php">
+      <file leaf-file-name="sentenciaPreparada.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conexion MySQL/sentenciaPreparada.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+              <folding>
+                <marker date="1510856628046" expanded="true" signature="320:375" ph="SELECT ID,No... usuario" />
+                <marker date="1510856628046" expanded="true" signature="415:473" ph="INSERT INTO usuario... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Equipo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conexion MySQL/NBA/Equipo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConexionNBA.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conexion MySQL/NBA/ConexionNBA.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListaEquipos.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/conexion MySQL/NBA/ListaEquipos.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="59" lean-forward="false" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="59" />
+              <folding>
+                <marker date="1510861176290" expanded="true" signature="394:423" ph="SELECT ID,NO... Equipos" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -56,6 +92,12 @@
         <option value="$PROJECT_DIR$/conexion MySQL/InsertParam/sentenciasPreparadas.php" />
         <option value="$PROJECT_DIR$/conexion MySQL/pruebaSelect.php" />
         <option value="$PROJECT_DIR$/conexion MySQL/InsertParam/insertsUsuarios.php" />
+        <option value="$PROJECT_DIR$/conexion MySQL/sentenciaPreparada.php" />
+        <option value="$PROJECT_DIR$/conexion MySQL/NBA/Equipo.php" />
+        <option value="$PROJECT_DIR$/conexion MySQL/NBA/ConexionNBA.php" />
+        <option value="$PROJECT_DIR$/conexion MySQL/helloWorld.php" />
+        <option value="C:/xampp/php/php.ini" />
+        <option value="$PROJECT_DIR$/conexion MySQL/NBA/ListaEquipos.php" />
       </list>
     </option>
   </component>
@@ -65,8 +107,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="Xampp" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="186" />
     <option name="y" value="140" />
     <option name="width" value="1441" />
@@ -88,6 +131,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -109,6 +153,12 @@
             <path>
               <item name="PHP" type="b2602c69:ProjectViewProjectNode" />
               <item name="PHP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="conexion MySQL" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="NBA" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="PHP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PHP" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Formulario Alumnos OO" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -120,7 +170,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -140,17 +189,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Form.html">
+  <component name="RunManager" selected="PHP Script.ListaEquipos.php">
     <configuration name="Form.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/conexion MySQL/InsertParam/Form.html" />
+    <configuration name="ListaEquipos.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/conexion MySQL/NBA/ListaEquipos.php" />
     <configuration name="pruebaSelect.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/conexion MySQL/pruebaSelect.php" />
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="PHP Script.pruebaSelect.php" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Form.html" />
+      <item index="2" class="java.lang.String" itemvalue="PHP Script.ListaEquipos.php" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Form.html" />
-        <item index="1" class="java.lang.String" itemvalue="PHP Script.pruebaSelect.php" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="PHP Script.ListaEquipos.php" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Form.html" />
+        <item index="2" class="java.lang.String" itemvalue="PHP Script.pruebaSelect.php" />
       </list>
     </recent_temporary>
   </component>
@@ -169,26 +221,28 @@
       <workItem from="1510506942254" duration="28000" />
       <workItem from="1510506988906" duration="19000" />
       <workItem from="1510589896835" duration="3199000" />
+      <workItem from="1510855042751" duration="5697000" />
+      <workItem from="1510860768380" duration="506000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3286000" />
+    <option name="totallyTimeSpent" value="9489000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="186" y="140" width="1441" height="870" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23298246" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17291667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26321355" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -205,28 +259,79 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/conexion MySQL/InsertParam/insertsUsuarios.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="11" selection-end-column="1" />
           <folding>
-            <marker date="1510593631874" expanded="true" signature="476:608" ph="INSERT INTO Usuario... " />
-            <marker date="1510593631874" expanded="true" signature="672:754" ph="SELECT ID,No... Usuario" />
-            <marker date="1510593631874" expanded="true" signature="727:753" ph="SELECT MAX(I... Usuario" />
+            <marker date="1510855053456" expanded="true" signature="486:600" ph="INSERT INTO Usuario... " />
+            <marker date="1510855053456" expanded="true" signature="691:773" ph="SELECT ID,No... Usuario" />
+            <marker date="1510855053456" expanded="true" signature="766:772" ph="SELECT MAX(I... Usuario" />
+            <marker date="1510855053456" expanded="true" signature="766:773" ph="SELECT ID,No... Usuario" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conexion MySQL/pruebaSelect.php">
+    <entry file="file://$PROJECT_DIR$/conexion MySQL/InsertParam/Form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+        <state relative-caret-position="306">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="18" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conexion MySQL/sentenciaPreparada.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
           <folding>
-            <marker date="1510592855235" expanded="true" signature="308:329" ph="Select * fro... Usuario" />
+            <marker date="1510856628046" expanded="true" signature="320:375" ph="SELECT ID,No... usuario" />
+            <marker date="1510856628046" expanded="true" signature="415:473" ph="INSERT INTO usuario... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conexion MySQL/NBA/Equipo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conexion MySQL/NBA/ConexionNBA.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conexion MySQL/NBA/ListaEquipos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+          <folding>
+            <marker date="1510861176290" expanded="true" signature="394:423" ph="SELECT ID,NO... Equipos" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conexion MySQL/InsertParam/insertsUsuarios.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510855053456" expanded="true" signature="486:600" ph="INSERT INTO Usuario... " />
+            <marker date="1510855053456" expanded="true" signature="691:773" ph="SELECT ID,No... Usuario" />
+            <marker date="1510855053456" expanded="true" signature="766:772" ph="SELECT MAX(I... Usuario" />
+            <marker date="1510855053456" expanded="true" signature="766:773" ph="SELECT ID,No... Usuario" />
           </folding>
         </state>
       </provider>
@@ -249,12 +354,134 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/conexion MySQL/InsertParam/insertsUsuarios.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1510593631874" expanded="true" signature="476:608" ph="INSERT INTO Usuario... " />
-            <marker date="1510593631874" expanded="true" signature="672:754" ph="SELECT ID,No... Usuario" />
-            <marker date="1510593631874" expanded="true" signature="727:753" ph="SELECT MAX(I... Usuario" />
+            <marker date="1510855053456" expanded="true" signature="486:600" ph="INSERT INTO Usuario... " />
+            <marker date="1510855053456" expanded="true" signature="691:773" ph="SELECT ID,No... Usuario" />
+            <marker date="1510855053456" expanded="true" signature="766:772" ph="SELECT MAX(I... Usuario" />
+            <marker date="1510855053456" expanded="true" signature="766:773" ph="SELECT ID,No... Usuario" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conexion MySQL/pruebaSelect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+          <folding>
+            <marker date="1510592855235" expanded="true" signature="308:329" ph="Select * fro... Usuario" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formulario Alumnos OO/MostrarArray.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+          <folding>
+            <element signature="e#6#86#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conexion MySQL/InsertParam/MostrarRellenarUsuarios.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formulario Alumnos OO/Persona.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conexion MySQL/InsertParam/Form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="18" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conexion MySQL/InsertParam/insertsUsuarios.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <marker date="1510855053456" expanded="true" signature="486:600" ph="INSERT INTO Usuario... " />
+            <marker date="1510855053456" expanded="true" signature="691:773" ph="SELECT ID,No... Usuario" />
+            <marker date="1510855053456" expanded="true" signature="766:772" ph="SELECT MAX(I... Usuario" />
+            <marker date="1510855053456" expanded="true" signature="766:773" ph="SELECT ID,No... Usuario" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conexion MySQL/NBA/Equipo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conexion MySQL/NBA/ConexionNBA.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conexion MySQL/sentenciaPreparada.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+          <folding>
+            <marker date="1510856628046" expanded="true" signature="320:375" ph="SELECT ID,No... usuario" />
+            <marker date="1510856628046" expanded="true" signature="415:473" ph="INSERT INTO usuario... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conexion MySQL/helloWorld.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conexion MySQL/insert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510245868399" expanded="true" signature="302:383" ph="INSERT INTO Usuario... " />
+            <marker date="1510245868399" expanded="true" signature="406:450" ph="SELECT ID,No... Usuario" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/xampp/php/php.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conexion MySQL/NBA/ListaEquipos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="59" lean-forward="false" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="59" />
+          <folding>
+            <marker date="1510861176290" expanded="true" signature="394:423" ph="SELECT ID,NO... Equipos" />
           </folding>
         </state>
       </provider>

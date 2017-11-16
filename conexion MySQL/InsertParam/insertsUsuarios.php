@@ -5,7 +5,7 @@
  * Date: 8/11/17
  * Time: 9:52
  */
-$conexion=new mysqli('localhost','pjarana','pjarana','Ejemplo');
+$conexion=new mysqli('localhost','pjarana','pjarana','ejemplo');
 if ($conexion->connect_error)
 {
     trigger_error("Failed to connect to MySQL: " . $conexion->connect_error, E_USER_ERROR);

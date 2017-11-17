@@ -21,38 +21,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Form.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/InsertParam/Form.html">
+      <file leaf-file-name="ListaEquipos.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NBA/ListaEquipos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="7" lean-forward="false" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MostrarRellenarUsuarios.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InsertParam/MostrarRellenarUsuarios.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="insertsUsuarios.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InsertParam/insertsUsuarios.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="18" column="110" lean-forward="false" selection-start-line="18" selection-start-column="110" selection-end-line="18" selection-end-column="110" />
+            <state relative-caret-position="154">
+              <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
               <folding>
-                <marker date="1510736132678" expanded="true" signature="486:538" ph="INSERT INTO Usuario... " />
-                <marker date="1510736132678" expanded="true" signature="486:600" ph="INSERT INTO Usuario... " />
-                <marker date="1510736132678" expanded="true" signature="486:817" ph="INSERT INTO Usuario... " />
-                <marker date="1510736132678" expanded="true" signature="691:773" ph="SELECT ID,No... Usuario" />
-                <marker date="1510736132678" expanded="true" signature="746:772" ph="SELECT MAX(I... Usuario" />
+                <marker date="1510907664252" expanded="true" signature="419:448" ph="SELECT ID,No... Equipos" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConexionNBA.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NBA/ConexionNBA.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -81,6 +67,8 @@
         <option value="/opt/lampp/htdocs/proyectos/InsertParam/MostrarRellenarUsuarios.php" />
         <option value="/opt/lampp/htdocs/proyectos/InsertParam/insertsUsuarios.php" />
         <option value="$PROJECT_DIR$/InsertParam/insertsUsuarios.php" />
+        <option value="$PROJECT_DIR$/NBA/ConexionNBA.php" />
+        <option value="$PROJECT_DIR$/NBA/ListaEquipos.php" />
       </list>
     </option>
   </component>
@@ -123,7 +111,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -146,12 +133,27 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="NBA" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="conexion MySQL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="conexion MySQL" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="InsertParam" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -178,8 +180,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Form.html">
+  <component name="RunManager" selected="PHPUnit.NBA">
     <configuration default="false" name="Form.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/proyectos/InsertParam/Form.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="NBA" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$/NBA" />
       <method />
     </configuration>
     <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
@@ -255,13 +261,15 @@
     <configuration default="false" name="xampp" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" server_name="xampp">
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="PHP Web Application.xampp" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Form.html" />
+      <item index="2" class="java.lang.String" itemvalue="PHPUnit.NBA" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Form.html" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.NBA" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Form.html" />
       </list>
     </recent_temporary>
   </component>
@@ -283,11 +291,12 @@
       <workItem from="1510730624017" duration="2172000" />
       <workItem from="1510732922987" duration="16000" />
       <workItem from="1510733159957" duration="1971000" />
+      <workItem from="1510906724595" duration="1513000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20773000" />
+    <option name="totallyTimeSpent" value="22286000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -296,7 +305,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49926794" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1770335" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -345,6 +354,36 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/InsertParam/Form.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InsertParam/MostrarRellenarUsuarios.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InsertParam/insertsUsuarios.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="110" lean-forward="false" selection-start-line="18" selection-start-column="110" selection-end-line="18" selection-end-column="110" />
+          <folding>
+            <marker date="1510906690376" expanded="true" signature="486:538" ph="INSERT INTO Usuario... " />
+            <marker date="1510906690376" expanded="true" signature="486:600" ph="INSERT INTO Usuario... " />
+            <marker date="1510906690376" expanded="true" signature="486:817" ph="INSERT INTO Usuario... " />
+            <marker date="1510906690376" expanded="true" signature="691:773" ph="SELECT ID,No... Usuario" />
+            <marker date="1510906690376" expanded="true" signature="746:772" ph="SELECT MAX(I... Usuario" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InsertParam/Form.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" column="7" lean-forward="false" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
           <folding />
@@ -378,11 +417,11 @@
         <state relative-caret-position="360">
           <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
           <folding>
-            <marker date="1510736132678" expanded="true" signature="486:538" ph="INSERT INTO Usuario... " />
-            <marker date="1510736132678" expanded="true" signature="486:600" ph="INSERT INTO Usuario... " />
-            <marker date="1510736132678" expanded="true" signature="486:817" ph="INSERT INTO Usuario... " />
-            <marker date="1510736132678" expanded="true" signature="691:773" ph="SELECT ID,No... Usuario" />
-            <marker date="1510736132678" expanded="true" signature="746:772" ph="SELECT MAX(I... Usuario" />
+            <marker date="1510906690376" expanded="true" signature="486:538" ph="INSERT INTO Usuario... " />
+            <marker date="1510906690376" expanded="true" signature="486:600" ph="INSERT INTO Usuario... " />
+            <marker date="1510906690376" expanded="true" signature="486:817" ph="INSERT INTO Usuario... " />
+            <marker date="1510906690376" expanded="true" signature="691:773" ph="SELECT ID,No... Usuario" />
+            <marker date="1510906690376" expanded="true" signature="746:772" ph="SELECT MAX(I... Usuario" />
           </folding>
         </state>
       </provider>
@@ -422,11 +461,11 @@
         <state relative-caret-position="306">
           <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding>
-            <marker date="1510736132678" expanded="true" signature="486:538" ph="INSERT INTO Usuario... " />
-            <marker date="1510736132678" expanded="true" signature="486:600" ph="INSERT INTO Usuario... " />
-            <marker date="1510736132678" expanded="true" signature="486:817" ph="INSERT INTO Usuario... " />
-            <marker date="1510736132678" expanded="true" signature="691:773" ph="SELECT ID,No... Usuario" />
-            <marker date="1510736132678" expanded="true" signature="746:772" ph="SELECT MAX(I... Usuario" />
+            <marker date="1510906690376" expanded="true" signature="486:538" ph="INSERT INTO Usuario... " />
+            <marker date="1510906690376" expanded="true" signature="486:600" ph="INSERT INTO Usuario... " />
+            <marker date="1510906690376" expanded="true" signature="486:817" ph="INSERT INTO Usuario... " />
+            <marker date="1510906690376" expanded="true" signature="691:773" ph="SELECT ID,No... Usuario" />
+            <marker date="1510906690376" expanded="true" signature="746:772" ph="SELECT MAX(I... Usuario" />
           </folding>
         </state>
       </provider>
@@ -626,14 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InsertParam/MostrarRellenarUsuarios.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///opt/lampp/htdocs/proyectos/InsertParam/insertsUsuarios.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -648,25 +679,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InsertParam/insertsUsuarios.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="18" column="110" lean-forward="false" selection-start-line="18" selection-start-column="110" selection-end-line="18" selection-end-column="110" />
-          <folding>
-            <marker date="1510736132678" expanded="true" signature="486:538" ph="INSERT INTO Usuario... " />
-            <marker date="1510736132678" expanded="true" signature="486:600" ph="INSERT INTO Usuario... " />
-            <marker date="1510736132678" expanded="true" signature="486:817" ph="INSERT INTO Usuario... " />
-            <marker date="1510736132678" expanded="true" signature="691:773" ph="SELECT ID,No... Usuario" />
-            <marker date="1510736132678" expanded="true" signature="746:772" ph="SELECT MAX(I... Usuario" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/InsertParam/Form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" column="7" lean-forward="false" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InsertParam/MostrarRellenarUsuarios.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InsertParam/insertsUsuarios.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="18" column="110" lean-forward="false" selection-start-line="18" selection-start-column="110" selection-end-line="18" selection-end-column="110" />
+          <folding>
+            <marker date="1510906690376" expanded="true" signature="486:538" ph="INSERT INTO Usuario... " />
+            <marker date="1510906690376" expanded="true" signature="486:600" ph="INSERT INTO Usuario... " />
+            <marker date="1510906690376" expanded="true" signature="486:817" ph="INSERT INTO Usuario... " />
+            <marker date="1510906690376" expanded="true" signature="691:773" ph="SELECT ID,No... Usuario" />
+            <marker date="1510906690376" expanded="true" signature="746:772" ph="SELECT MAX(I... Usuario" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NBA/ConexionNBA.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NBA/ListaEquipos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <marker date="1510907664252" expanded="true" signature="419:448" ph="SELECT ID,No... Equipos" />
+          </folding>
         </state>
       </provider>
     </entry>

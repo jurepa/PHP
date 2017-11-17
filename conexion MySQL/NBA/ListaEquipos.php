@@ -8,7 +8,7 @@
 <hr width="100%">
 <body>
 
-<table style="width:100%">
+<table style="width:70%" border="1" align="center">
     <tr>
         <th>ID</th>
         <th>Nombre</th>
@@ -22,15 +22,10 @@
     $result=$equiposStatement->get_result();
     while($row=$result->fetch_assoc())
     {
-        echo "<tr><th>" . $row["ID"] . "</th><th>" . $row["Nombre"] . "</th><th>Ni idea hulio</th></tr>";
+        echo "<tr><td>" . $row["ID"] . "</td><td>" . $row["Nombre"] . "</td><td>Ni idea hulio</td></tr>";
     }
 
     ?>
-    <tr>
-        <td>Eve</td>
-        <td>Jackson</td>
-        <td>94</td>
-    </tr>
 </table>
 </body>
 </html>

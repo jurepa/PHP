@@ -11,7 +11,7 @@ class ConexionNBA
     private $conexion;
     public function __construct()
     {
-        $this->conexion=new mysqli('localhost','pjarana','pjarana','ejemplo');
+        $this->conexion=new mysqli('localhost','pjarana','pjarana','nba');
         if ($this->conexion->connect_error)
         {
             trigger_error("Failed to connect to MySQL: " . $this->conexion->connect_error, E_USER_ERROR);

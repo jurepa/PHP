@@ -13,6 +13,7 @@
         <th>ID</th>
         <th>Nombre</th>
         <th>Número de Jugadores</th>
+        <th>Opciones</th>
     </tr>
     <?php
     require "ConexionNBA.php";
@@ -22,10 +23,12 @@
     $result=$equiposStatement->get_result();
     while($row=$result->fetch_assoc())
     {
-        echo "<tr><td>" . $row["ID"] . "</td><td>" . $row["Nombre"] . "</td><td>Ni idea hulio</td></tr>";
+        echo "<tr><td>" . $row["ID"] . "</td><td>" . $row["Nombre"] . "</td><td>Ni idea hulio</td><td><input type='button' value='Jugadores'/>  <input type='button' value='Eliminar'/></td></tr>";
     }
 
     ?>
 </table>
+<a href="addEquipo.html"><input type="button" value="Añadir nuevo equipo"/></a>
+
 </body>
 </html>

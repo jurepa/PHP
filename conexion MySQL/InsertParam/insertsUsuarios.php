@@ -32,5 +32,5 @@ for($i=0;$i<count($edadUsuario);$i++)
     $i++;
 }
 
-
+$conexion->close();
 ?>

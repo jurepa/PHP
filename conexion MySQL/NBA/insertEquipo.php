@@ -19,5 +19,6 @@ while($row=$result->fetch_assoc())
     echo "ID: " . $row["ID"] . " Nombre: " . $row["Nombre"]."<br><br>";
     echo "Se añadió el nuevo equipo<br><br>";
 }
+$conexion->getConexion()->close();
 echo "<a href=\"addEquipo.html\"><input type=\"button\" value=\"Añadir otro equipo\"/></a><br><br>";
 echo "<a href=\"ListaEquipos.php\"><input type=\"button\" value=\"Volver a la lista de equipos\"/></a>";

@@ -23,12 +23,13 @@
     $result=$equiposStatement->get_result();
     while($row=$result->fetch_assoc())
     {
-        echo "<tr><td>" . $row["ID"] . "</td><td>" . $row["Nombre"] . "</td><td>Ni idea hulio</td><td><input type='button' value='Jugadores'/>  <input type='button' value='Eliminar'/></td></tr>";
+        $id=$row["ID"];
+        echo "<tr><td>" . $row["ID"] . "</td><td>" . $row["Nombre"] . "</td><td>Ni idea hulio</td><td><a href='deleteEquipo.php?query=$id'><input type='button' value='Eliminar'/></a> </td></tr>";
     }
 
     ?>
 </table>
 <a href="addEquipo.html"><input type="button" value="Añadir nuevo equipo"/></a>
-
+<input type='button' value='Jugadores'/>
 </body>
 </html>

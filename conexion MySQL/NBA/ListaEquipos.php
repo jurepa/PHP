@@ -24,7 +24,8 @@
     while($row=$result->fetch_assoc())
     {
         $id=$row["ID"];
-        $numJugadores=$conexion->getConexion()->prepare("Select COUNT(ID) as NumJugadores FROM Jugadores WHERE ID_Equipo=$id");
+        $numJugadores=$conexion->getConexion()->prepare("Select COUNT(ID) as NumJugadores FROM Jugadores WHERE ID_Equipo=?");
+        $numJugadores->bind_param("i",$id);
         $numJugadores->execute();
         $resultNumJugadores=$numJugadores->get_result();
         while($rowNumJugadores=$resultNumJugadores->fetch_assoc())

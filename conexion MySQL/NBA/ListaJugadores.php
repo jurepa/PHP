@@ -27,7 +27,7 @@
     while($row=$result->fetch_assoc())
     {
         $id=$row["ID"];
-        echo "<tr><td>" . $row["ID"] . "</td><td>" . $row["Nombre"] . "</td><td>".$row["Apellidos"]."</td><td>".$row["Edad"]."</td><td>No tiene</td><td><a href='deleteJugador.php?query=$id&idEquipo=$idEquipo'><input type='button' value='Eliminar'/></a></td></tr>";
+        echo "<tr><td>" . $row["ID"] . "</td><td>" . $row["Nombre"] . "</td><td>".$row["Apellidos"]."</td><td>".$row["Edad"]."</td><td>No tiene</td><td><a href='deleteJugador.php?query=$id&idEquipo=$idEquipo'><input type='button' value='Eliminar'/></a><a href='editJugador.php?query=$id&idEquipo=$idEquipo'><input type='button' value='Editar'/></a></td></tr>";
     }
     $conexion->getConexion()->close();
 

@@ -30,7 +30,9 @@
         $resultNumJugadores=$numJugadores->get_result();
         while($rowNumJugadores=$resultNumJugadores->fetch_assoc())
         {
-            echo "<tr><td>" . $row["ID"] . "</td><td>" . $row["Nombre"] . "</td><td>".$rowNumJugadores["NumJugadores"]."</td><td><a href='deleteEquipo.php?query=$id'><input type='button' value='Eliminar'/></a><a href='ListaJugadores.php?query=$id'><input type='button' value='Jugadores'/></a> </td></tr>";
+            echo "<tr><td>" . $row["ID"] . "</td><td>" . $row["Nombre"] . "</td><td>".$rowNumJugadores["NumJugadores"]."</td><td><a href='deleteEquipo.php?query=$id'>
+                                                                                                                                                <input type='button' value='Eliminar'/>
+                                                                                                                                                </a><a href='ListaJugadores.php?query=$id'><input type='button' value='Jugadores'/></a> </td></tr>";
         }
     }
     $conexion->getConexion()->close();

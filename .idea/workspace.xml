@@ -14,7 +14,7 @@
       <file leaf-file-name="insertsUsuarios.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conexion MySQL/InsertParam/insertsUsuarios.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="476">
               <caret line="28" column="158" lean-forward="false" selection-start-line="28" selection-start-column="158" selection-end-line="28" selection-end-column="158" />
               <folding>
                 <marker date="1511196557469" expanded="true" signature="486:600" ph="INSERT INTO Usuario... " />
@@ -26,16 +26,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListaEquipos.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ListaEquipos.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/conexion MySQL/NBA/ListaEquipos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="20" column="89" lean-forward="true" selection-start-line="20" selection-start-column="89" selection-end-line="20" selection-end-column="89" />
+            <state relative-caret-position="561">
+              <caret line="33" column="163" lean-forward="false" selection-start-line="33" selection-start-column="163" selection-end-line="33" selection-end-column="163" />
               <folding>
-                <marker date="1511714464332" expanded="true" signature="445:474" ph="SELECT ID,No... Equipos" />
-                <marker date="1511714464332" expanded="true" signature="683:747" ph="Select COUNT... Jugadores" />
-                <marker date="1511714464332" expanded="true" signature="683:748" ph="Select COUNT... Jugadores" />
-                <marker date="1511714464332" expanded="true" signature="683:750" ph="Select COUNT... Jugadores" />
+                <marker date="1511807799480" expanded="true" signature="445:474" ph="SELECT ID,No... Equipos" />
+                <marker date="1511807799480" expanded="true" signature="683:747" ph="Select COUNT... Jugadores" />
+                <marker date="1511807799480" expanded="true" signature="683:748" ph="Select COUNT... Jugadores" />
+                <marker date="1511807799480" expanded="true" signature="683:750" ph="Select COUNT... Jugadores" />
+                <marker date="1511807799480" expanded="true" signature="985:1556" ph="..." />
+                <marker date="1511807799480" expanded="true" signature="1092:1551" ph="..." />
+                <marker date="1511807799480" expanded="true" signature="1129:1462" ph="..." />
               </folding>
             </state>
           </provider>
@@ -69,7 +72,7 @@
       <file leaf-file-name="ListaJugadores.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conexion MySQL/NBA/ListaJugadores.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="493">
               <caret line="29" column="290" lean-forward="false" selection-start-line="29" selection-start-column="290" selection-end-line="29" selection-end-column="290" />
               <folding>
                 <marker date="1511714113354" expanded="true" signature="511:574" ph="SELECT ID,No... Equipos" />
@@ -78,7 +81,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editJugador.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="editJugador.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conexion MySQL/NBA/editJugador.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -88,11 +91,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="pruebaSelect.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conexion MySQL/pruebaSelect.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+              <folding>
+                <marker date="1510592855235" expanded="true" signature="308:329" ph="Select * fro... Usuario" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="deleteEquipo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conexion MySQL/NBA/deleteEquipo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="84" lean-forward="true" selection-start-line="15" selection-start-column="84" selection-end-line="15" selection-end-column="84" />
+            <state relative-caret-position="153">
+              <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
               <folding>
                 <marker date="1511203038591" expanded="true" signature="208:244" ph="SELECT Nombr... Equipos" />
                 <marker date="1511203038591" expanded="true" signature="358:396" ph="DELETE FROM " />
@@ -135,8 +150,8 @@
         <option value="$PROJECT_DIR$/conexion MySQL/NBA/deleteEquipo.php" />
         <option value="$PROJECT_DIR$/conexion MySQL/NBA/addJugador.php" />
         <option value="$PROJECT_DIR$/conexion MySQL/NBA/ListaJugadores.php" />
-        <option value="$PROJECT_DIR$/conexion MySQL/NBA/ListaEquipos.php" />
         <option value="$PROJECT_DIR$/conexion MySQL/NBA/editJugador.php" />
+        <option value="$PROJECT_DIR$/conexion MySQL/NBA/ListaEquipos.php" />
       </list>
     </option>
   </component>
@@ -148,9 +163,10 @@
   </component>
   <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="Xampp" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="223" />
+    <option name="y" value="14" />
+    <option name="width" value="1445" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
@@ -168,7 +184,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -207,6 +222,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -266,20 +282,21 @@
       <workItem from="1511020179914" duration="4901000" />
       <workItem from="1511196189183" duration="7090000" />
       <workItem from="1511713446424" duration="1992000" />
+      <workItem from="1511807279996" duration="1146000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23889000" />
+    <option name="totallyTimeSpent" value="25035000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25156575" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18697916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26574174" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2653277" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -328,10 +345,13 @@
         <state relative-caret-position="510">
           <caret line="30" column="73" lean-forward="false" selection-start-line="30" selection-start-column="73" selection-end-line="30" selection-end-column="73" />
           <folding>
-            <marker date="1511714464332" expanded="true" signature="445:474" ph="SELECT ID,No... Equipos" />
-            <marker date="1511714464332" expanded="true" signature="683:747" ph="Select COUNT... Jugadores" />
-            <marker date="1511714464332" expanded="true" signature="683:748" ph="Select COUNT... Jugadores" />
-            <marker date="1511714464332" expanded="true" signature="683:750" ph="Select COUNT... Jugadores" />
+            <marker date="1511807799480" expanded="true" signature="445:474" ph="SELECT ID,No... Equipos" />
+            <marker date="1511807799480" expanded="true" signature="683:747" ph="Select COUNT... Jugadores" />
+            <marker date="1511807799480" expanded="true" signature="683:748" ph="Select COUNT... Jugadores" />
+            <marker date="1511807799480" expanded="true" signature="683:750" ph="Select COUNT... Jugadores" />
+            <marker date="1511807799480" expanded="true" signature="985:1556" ph="..." />
+            <marker date="1511807799480" expanded="true" signature="1092:1551" ph="..." />
+            <marker date="1511807799480" expanded="true" signature="1129:1462" ph="..." />
           </folding>
         </state>
       </provider>
@@ -407,10 +427,13 @@
         <state relative-caret-position="408">
           <caret line="24" column="59" lean-forward="false" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="59" />
           <folding>
-            <marker date="1511714464332" expanded="true" signature="445:474" ph="SELECT ID,No... Equipos" />
-            <marker date="1511714464332" expanded="true" signature="683:747" ph="Select COUNT... Jugadores" />
-            <marker date="1511714464332" expanded="true" signature="683:748" ph="Select COUNT... Jugadores" />
-            <marker date="1511714464332" expanded="true" signature="683:750" ph="Select COUNT... Jugadores" />
+            <marker date="1511807799480" expanded="true" signature="445:474" ph="SELECT ID,No... Equipos" />
+            <marker date="1511807799480" expanded="true" signature="683:747" ph="Select COUNT... Jugadores" />
+            <marker date="1511807799480" expanded="true" signature="683:748" ph="Select COUNT... Jugadores" />
+            <marker date="1511807799480" expanded="true" signature="683:750" ph="Select COUNT... Jugadores" />
+            <marker date="1511807799480" expanded="true" signature="985:1556" ph="..." />
+            <marker date="1511807799480" expanded="true" signature="1092:1551" ph="..." />
+            <marker date="1511807799480" expanded="true" signature="1129:1462" ph="..." />
           </folding>
         </state>
       </provider>
@@ -467,10 +490,13 @@
         <state relative-caret-position="408">
           <caret line="24" column="59" lean-forward="false" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="59" />
           <folding>
-            <marker date="1511714464332" expanded="true" signature="445:474" ph="SELECT ID,No... Equipos" />
-            <marker date="1511714464332" expanded="true" signature="683:747" ph="Select COUNT... Jugadores" />
-            <marker date="1511714464332" expanded="true" signature="683:748" ph="Select COUNT... Jugadores" />
-            <marker date="1511714464332" expanded="true" signature="683:750" ph="Select COUNT... Jugadores" />
+            <marker date="1511807799480" expanded="true" signature="445:474" ph="SELECT ID,No... Equipos" />
+            <marker date="1511807799480" expanded="true" signature="683:747" ph="Select COUNT... Jugadores" />
+            <marker date="1511807799480" expanded="true" signature="683:748" ph="Select COUNT... Jugadores" />
+            <marker date="1511807799480" expanded="true" signature="683:750" ph="Select COUNT... Jugadores" />
+            <marker date="1511807799480" expanded="true" signature="985:1556" ph="..." />
+            <marker date="1511807799480" expanded="true" signature="1092:1551" ph="..." />
+            <marker date="1511807799480" expanded="true" signature="1129:1462" ph="..." />
           </folding>
         </state>
       </provider>
@@ -527,10 +553,13 @@
         <state relative-caret-position="561">
           <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
           <folding>
-            <marker date="1511714464332" expanded="true" signature="445:474" ph="SELECT ID,No... Equipos" />
-            <marker date="1511714464332" expanded="true" signature="683:747" ph="Select COUNT... Jugadores" />
-            <marker date="1511714464332" expanded="true" signature="683:748" ph="Select COUNT... Jugadores" />
-            <marker date="1511714464332" expanded="true" signature="683:750" ph="Select COUNT... Jugadores" />
+            <marker date="1511807799480" expanded="true" signature="445:474" ph="SELECT ID,No... Equipos" />
+            <marker date="1511807799480" expanded="true" signature="683:747" ph="Select COUNT... Jugadores" />
+            <marker date="1511807799480" expanded="true" signature="683:748" ph="Select COUNT... Jugadores" />
+            <marker date="1511807799480" expanded="true" signature="683:750" ph="Select COUNT... Jugadores" />
+            <marker date="1511807799480" expanded="true" signature="985:1556" ph="..." />
+            <marker date="1511807799480" expanded="true" signature="1092:1551" ph="..." />
+            <marker date="1511807799480" expanded="true" signature="1129:1462" ph="..." />
           </folding>
         </state>
       </provider>
@@ -572,16 +601,6 @@
             <marker date="1511196557469" expanded="true" signature="691:773" ph="SELECT ID,No... Usuario" />
             <marker date="1511196557469" expanded="true" signature="766:772" ph="SELECT MAX(I... Usuario" />
             <marker date="1511196557469" expanded="true" signature="766:773" ph="SELECT ID,No... Usuario" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conexion MySQL/pruebaSelect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
-          <folding>
-            <marker date="1510592855235" expanded="true" signature="308:329" ph="Select * fro... Usuario" />
           </folding>
         </state>
       </provider>
@@ -696,7 +715,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/conexion MySQL/InsertParam/insertsUsuarios.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="476">
           <caret line="28" column="158" lean-forward="false" selection-start-line="28" selection-start-column="158" selection-end-line="28" selection-end-column="158" />
           <folding>
             <marker date="1511196557469" expanded="true" signature="486:600" ph="INSERT INTO Usuario... " />
@@ -731,18 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conexion MySQL/NBA/deleteEquipo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="84" lean-forward="true" selection-start-line="15" selection-start-column="84" selection-end-line="15" selection-end-column="84" />
-          <folding>
-            <marker date="1511203038591" expanded="true" signature="208:244" ph="SELECT Nombr... Equipos" />
-            <marker date="1511203038591" expanded="true" signature="358:396" ph="DELETE FROM " />
-            <marker date="1511203038591" expanded="true" signature="481:510" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conexion MySQL/NBA/addJugador.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -753,23 +760,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/conexion MySQL/NBA/ListaJugadores.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="493">
           <caret line="29" column="290" lean-forward="false" selection-start-line="29" selection-start-column="290" selection-end-line="29" selection-end-column="290" />
           <folding>
             <marker date="1511714113354" expanded="true" signature="511:574" ph="SELECT ID,No... Equipos" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conexion MySQL/NBA/ListaEquipos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="89" lean-forward="true" selection-start-line="20" selection-start-column="89" selection-end-line="20" selection-end-column="89" />
-          <folding>
-            <marker date="1511714464332" expanded="true" signature="445:474" ph="SELECT ID,No... Equipos" />
-            <marker date="1511714464332" expanded="true" signature="683:747" ph="Select COUNT... Jugadores" />
-            <marker date="1511714464332" expanded="true" signature="683:748" ph="Select COUNT... Jugadores" />
-            <marker date="1511714464332" expanded="true" signature="683:750" ph="Select COUNT... Jugadores" />
           </folding>
         </state>
       </provider>
@@ -779,6 +773,44 @@
         <state relative-caret-position="187">
           <caret line="11" column="60" lean-forward="false" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conexion MySQL/pruebaSelect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding>
+            <marker date="1510592855235" expanded="true" signature="308:329" ph="Select * fro... Usuario" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conexion MySQL/NBA/deleteEquipo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <marker date="1511203038591" expanded="true" signature="208:244" ph="SELECT Nombr... Equipos" />
+            <marker date="1511203038591" expanded="true" signature="358:396" ph="DELETE FROM " />
+            <marker date="1511203038591" expanded="true" signature="481:510" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conexion MySQL/NBA/ListaEquipos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="163" lean-forward="false" selection-start-line="33" selection-start-column="163" selection-end-line="33" selection-end-column="163" />
+          <folding>
+            <marker date="1511807799480" expanded="true" signature="445:474" ph="SELECT ID,No... Equipos" />
+            <marker date="1511807799480" expanded="true" signature="683:747" ph="Select COUNT... Jugadores" />
+            <marker date="1511807799480" expanded="true" signature="683:748" ph="Select COUNT... Jugadores" />
+            <marker date="1511807799480" expanded="true" signature="683:750" ph="Select COUNT... Jugadores" />
+            <marker date="1511807799480" expanded="true" signature="985:1556" ph="..." />
+            <marker date="1511807799480" expanded="true" signature="1092:1551" ph="..." />
+            <marker date="1511807799480" expanded="true" signature="1129:1462" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,7 +1,7 @@
 <?php
 
 require_once "ConsLibrosModel.php";
-
+require_once "LibroModel.php";
 
 class LibroHandlerModel
 {
@@ -72,6 +72,34 @@ class LibroHandlerModel
 
         return $listaLibros;
     }
+
+    public static function insertLibro(LibroModel $libro)
+    {
+        $db = DatabaseModel::getInstance();
+        $db_connection = $db->getConnection();
+        $titulo=$libro->getTitulo();
+        $numpag=$libro->getNumpag();
+        $prep_query=$db_connection->prepare("INSERT INTO libros(titulo,numpag) VALUES(?,?)");
+        $prep_query->bind_param('si',$titulo,$numpag);
+        $prep_query->execute();
+        return $prep_query->affected_rows;
+    }
+
+    public static function getUltimoLibro()
+    {
+        $libro=null;
+        $db = DatabaseModel::getInstance();
+        $db_connection = $db->getConnection();
+        $prep_query=$db_connection->prepare("SELECT codigo,titulo,numpag FROM libros WHERE codigo=(SELECT MAX(codigo)FROM libros)");
+        $prep_query->execute();
+        $result=$prep_query->get_result();
+        while($row=$result->fetch_assoc())
+        {
+            $libro=new LibroModel($row["codigo"],$row["titulo"],$row["numpag"]);
+        }
+        return $libro;
+    }
+
 
     //returns true if $id is a valid id for a book
     //In this case, it will be valid if it only contains

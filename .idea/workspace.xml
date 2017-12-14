@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48dad47f-174c-43ce-ab07-13f96035448e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ejemplorest/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ejemplorest/.idea/dataSources.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ejemplorest/Request.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ejemplorest/Response.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ejemplorest/config/config.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ejemplorest/controller/Controller.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ejemplorest/controller/LibroController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ejemplorest/controller/NotFoundController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ejemplorest/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ejemplorest/model/ConsLibrosModel.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ejemplorest/model/DatabaseModel.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ejemplorest/model/LibroHandlerModel.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ejemplorest/model/LibroModel.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webServers.xml" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conexion MySQL/.idea/workspace.xml" afterPath="$PROJECT_DIR$/conexion MySQL/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApiRest/ejemplorest/Response.php" afterPath="$PROJECT_DIR$/ApiRest/ejemplorest/Response.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApiRest/ejemplorest/controller/LibroController.php" afterPath="$PROJECT_DIR$/ApiRest/ejemplorest/controller/LibroController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApiRest/ejemplorest/model/LibroHandlerModel.php" afterPath="$PROJECT_DIR$/ApiRest/ejemplorest/model/LibroHandlerModel.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,12 +20,13 @@
       <file leaf-file-name="LibroHandlerModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ApiRest/ejemplorest/model/LibroHandlerModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="85" column="5" lean-forward="true" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+            <state relative-caret-position="134">
+              <caret line="106" column="76" lean-forward="false" selection-start-line="106" selection-start-column="76" selection-end-line="106" selection-end-column="76" />
               <folding>
-                <marker date="1513171054050" expanded="true" signature="3021:3066" ph="INSERT INTO libros... " />
-                <marker date="1513171054050" expanded="true" signature="3414:3498" ph="SELECT codig... Libros" />
-                <marker date="1513171054050" expanded="true" signature="3468:3497" ph="SELECT MAX(c... libros" />
+                <marker date="1513238276557" expanded="true" signature="3021:3066" ph="INSERT INTO libros... " />
+                <marker date="1513238276557" expanded="true" signature="3414:3498" ph="SELECT codig... Libros" />
+                <marker date="1513238276557" expanded="true" signature="3468:3497" ph="SELECT MAX(c... libros" />
+                <marker date="1513238276557" expanded="true" signature="3937:3970" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -46,25 +35,15 @@
       <file leaf-file-name="LibroController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ApiRest/ejemplorest/controller/LibroController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <state relative-caret-position="315">
+              <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Response.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ApiRest/ejemplorest/Response.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="13" column="64" lean-forward="true" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="76" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LibroModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ApiRest/ejemplorest/model/LibroModel.php">
+      <file leaf-file-name="NotFoundController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ApiRest/ejemplorest/controller/NotFoundController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -73,10 +52,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Response.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ApiRest/ejemplorest/Response.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="50" column="75" lean-forward="false" selection-start-line="50" selection-start-column="75" selection-end-line="50" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Request.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ApiRest/ejemplorest/Request.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
+            <state relative-caret-position="468">
               <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding />
             </state>
@@ -96,7 +85,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response54.json" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response25.txt" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -122,8 +111,9 @@
         <option value="$PROJECT_DIR$/conexion MySQL/NBA/editJugador.php" />
         <option value="$PROJECT_DIR$/conexion MySQL/NBA/ListaEquipos.php" />
         <option value="$PROJECT_DIR$/ApiRest/ejemplorest/Request.php" />
-        <option value="$PROJECT_DIR$/ApiRest/ejemplorest/model/LibroHandlerModel.php" />
         <option value="$PROJECT_DIR$/ApiRest/ejemplorest/controller/LibroController.php" />
+        <option value="$PROJECT_DIR$/ApiRest/ejemplorest/Response.php" />
+        <option value="$PROJECT_DIR$/ApiRest/ejemplorest/model/LibroHandlerModel.php" />
       </list>
     </option>
   </component>
@@ -163,7 +153,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -277,6 +266,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -288,6 +278,213 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://rest.dev" />
+          <option name="urlPath" value="/libro/8" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{&quot;titulosdfgweqqweeqw&quot;:&quot;Los Ivan andGo&quot;,&quot;numpag&quot;:200}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://rest.dev" />
+          <option name="urlPath" value="/libro" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{&quot;titulosdfgweqqweeqw&quot;:&quot;Los Ivan andGo&quot;,&quot;numpag&quot;:200}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://rest.dev" />
+          <option name="urlPath" value="/libro/8" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{&quot;titulosdfgweqqweeqw&quot;:&quot;Los Ivan andGo&quot;,&quot;numpag&quot;:200}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://rest.dev" />
+          <option name="urlPath" value="/libro" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{&quot;titulosdfgweqqweeqw&quot;:&quot;Los Ivan andGo&quot;,&quot;numpag&quot;:200}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://rest.dev" />
+          <option name="urlPath" value="/libro" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Typeygh" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;titulosdfgweqqweeqw&quot;:&quot;Los Ivan andGo&quot;,&quot;numpag&quot;:200}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://rest.dev" />
+          <option name="urlPath" value="/libro" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Typejhjk" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{&quot;titulosdfgweqqweeqw&quot;:&quot;Los Ivan andGo&quot;,&quot;numpag&quot;:200}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://rest.dev" />
+          <option name="urlPath" value="/libro" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;titulosdfgweqqweeqw&quot;:&quot;Los Ivan andGo&quot;,&quot;numpag&quot;:200}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://rest.dev" />
+          <option name="urlPath" value="/libro/1" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;titulosdfgweqqweeqw&quot;:&quot;Los Ivan andGo&quot;,&quot;numpag&quot;:200}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://rest.dev" />
+          <option name="urlPath" value="/libro/1" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
           <option name="urlBase" value="http://rest.dev" />
@@ -591,6 +788,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -645,11 +848,12 @@
       <workItem from="1511713446424" duration="1992000" />
       <workItem from="1511807279996" duration="1146000" />
       <workItem from="1513166622091" duration="5287000" />
+      <workItem from="1513237048810" duration="2150000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30322000" />
+    <option name="totallyTimeSpent" value="32472000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -658,14 +862,14 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43338683" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26484752" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.434992" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3964687" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3964687" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -683,37 +887,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/ApiRest/ejemplorest/controller/LibroController.php</url>
-          <line>10</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/ApiRest/ejemplorest/Request.php</url>
-          <line>42</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/conexion MySQL/InsertParam/Form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="7" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="18" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conexion MySQL/sentenciaPreparada.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conexion MySQL/NBA/Equipo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -725,7 +903,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -733,13 +910,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="59" lean-forward="false" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="59" />
-          <folding>
-            <marker date="1511940672947" expanded="true" signature="445:474" ph="SELECT ID,No... Equipos" />
-            <marker date="1511940672947" expanded="true" signature="683:748" ph="Select COUNT... Jugadores" />
-            <marker date="1511940672947" expanded="true" signature="985:1556" ph="..." />
-            <marker date="1511940672947" expanded="true" signature="1092:1551" ph="..." />
-            <marker date="1511940672947" expanded="true" signature="1129:1462" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -747,7 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="11" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -776,7 +945,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -784,13 +952,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="59" lean-forward="false" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="59" />
-          <folding>
-            <marker date="1511940672947" expanded="true" signature="445:474" ph="SELECT ID,No... Equipos" />
-            <marker date="1511940672947" expanded="true" signature="683:748" ph="Select COUNT... Jugadores" />
-            <marker date="1511940672947" expanded="true" signature="985:1556" ph="..." />
-            <marker date="1511940672947" expanded="true" signature="1092:1551" ph="..." />
-            <marker date="1511940672947" expanded="true" signature="1129:1462" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -798,7 +959,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="11" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -827,7 +987,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -835,13 +994,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-          <folding>
-            <marker date="1511940672947" expanded="true" signature="445:474" ph="SELECT ID,No... Equipos" />
-            <marker date="1511940672947" expanded="true" signature="683:748" ph="Select COUNT... Jugadores" />
-            <marker date="1511940672947" expanded="true" signature="985:1556" ph="..." />
-            <marker date="1511940672947" expanded="true" signature="1092:1551" ph="..." />
-            <marker date="1511940672947" expanded="true" signature="1129:1462" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -849,7 +1001,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -871,7 +1022,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -930,7 +1080,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -961,7 +1110,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="28" column="158" lean-forward="false" selection-start-line="28" selection-start-column="158" selection-end-line="28" selection-end-column="158" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -969,7 +1117,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="26" column="121" lean-forward="false" selection-start-line="26" selection-start-column="121" selection-end-line="26" selection-end-column="121" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -984,7 +1131,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
           <caret line="29" column="290" lean-forward="false" selection-start-line="29" selection-start-column="290" selection-end-line="29" selection-end-column="290" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -992,7 +1138,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="60" lean-forward="false" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1000,7 +1145,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1008,7 +1152,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1016,13 +1159,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="531">
           <caret line="33" column="163" lean-forward="false" selection-start-line="33" selection-start-column="163" selection-end-line="33" selection-end-column="163" />
-          <folding>
-            <marker date="1511940672947" expanded="true" signature="445:474" ph="SELECT ID,No... Equipos" />
-            <marker date="1511940672947" expanded="true" signature="683:748" ph="Select COUNT... Jugadores" />
-            <marker date="1511940672947" expanded="true" signature="985:1556" ph="..." />
-            <marker date="1511940672947" expanded="true" signature="1092:1551" ph="..." />
-            <marker date="1511940672947" expanded="true" signature="1129:1462" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1030,7 +1166,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="7" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1038,11 +1173,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApiRest/ejemplorest/controller/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-432">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ApiRest/ejemplorest/model/LibroModel.php">
+    <entry file="file://$PROJECT_DIR$/ApiRest/ejemplorest/controller/NotFoundController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1050,9 +1192,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ApiRest/ejemplorest/model/LibroModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1126">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ApiRest/ejemplorest/Request.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
+        <state relative-caret-position="468">
           <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding />
         </state>
@@ -1060,28 +1210,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ApiRest/ejemplorest/Response.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="64" lean-forward="true" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="76" />
+        <state relative-caret-position="90">
+          <caret line="50" column="75" lean-forward="false" selection-start-line="50" selection-start-column="75" selection-end-line="50" selection-end-column="75" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ApiRest/ejemplorest/model/LibroHandlerModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="85" column="5" lean-forward="true" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+        <state relative-caret-position="134">
+          <caret line="106" column="76" lean-forward="false" selection-start-line="106" selection-start-column="76" selection-end-line="106" selection-end-column="76" />
           <folding>
-            <marker date="1513171054050" expanded="true" signature="3021:3066" ph="INSERT INTO libros... " />
-            <marker date="1513171054050" expanded="true" signature="3414:3498" ph="SELECT codig... Libros" />
-            <marker date="1513171054050" expanded="true" signature="3468:3497" ph="SELECT MAX(c... libros" />
+            <marker date="1513238276557" expanded="true" signature="3021:3066" ph="INSERT INTO libros... " />
+            <marker date="1513238276557" expanded="true" signature="3414:3498" ph="SELECT codig... Libros" />
+            <marker date="1513238276557" expanded="true" signature="3468:3497" ph="SELECT MAX(c... libros" />
+            <marker date="1513238276557" expanded="true" signature="3937:3970" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ApiRest/ejemplorest/controller/LibroController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state relative-caret-position="315">
+          <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
           <folding />
         </state>
       </provider>

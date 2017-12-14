@@ -100,6 +100,17 @@ class LibroHandlerModel
         return $libro;
     }
 
+    public static function deleteLibro($id)
+    {
+        $db = DatabaseModel::getInstance();
+        $db_connection = $db->getConnection();
+        $prep_query=$db_connection->prepare("DELETE FROM libros WHERE codigo=?");
+        $prep_query->bind_param('i',$id);
+        $prep_query->execute();
+
+        return $prep_query->affected_rows;
+    }
+
 
     //returns true if $id is a valid id for a book
     //In this case, it will be valid if it only contains

@@ -63,4 +63,26 @@ class LibroController extends Controller
 
     }
 
+    public function manageDeleteVerb(Request $request)
+    {
+        $id=null;
+        $code=null;
+        if(isset($request->getUrlElements()[2]))
+        {
+            $id=$request->getUrlElements()[2];
+        }
+        $borrado=LibroHandlerModel::deleteLibro($id);
+
+        if($borrado==1)
+        {
+            $code=200;
+        }
+        else
+        {
+            $code=404;
+        }
+        $response=new Response($code,null,null,null);
+        $response->generate();
+    }
+
 }

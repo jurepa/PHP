@@ -48,7 +48,7 @@ class Response
                 }
         }
 
-        http_response_code($this->code);
+        http_response_code($this->code); //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         if (isset($this->headers)) {
             foreach ($this->headers as $key => $value) {
                 header($key . ': ' . $value);

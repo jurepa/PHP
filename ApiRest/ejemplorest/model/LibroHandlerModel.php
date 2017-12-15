@@ -84,6 +84,18 @@ class LibroHandlerModel
         $prep_query->execute();
         return $prep_query->affected_rows;
     }
+    public static function insertLibroConId(LibroModel $libro)
+    {
+        $db = DatabaseModel::getInstance();
+        $db_connection = $db->getConnection();
+        $titulo=$libro->getTitulo();
+        $numpag=$libro->getNumpag();
+        $id=$libro->getCodigo();
+        $prep_query=$db_connection->prepare("INSERT INTO libros(codigo,titulo,numpag) VALUES(?,?,?)");
+        $prep_query->bind_param('isi',$id,$titulo,$numpag);
+        $prep_query->execute();
+        return $prep_query->affected_rows;
+    }
 
     public static function getUltimoLibro()
     {
@@ -111,6 +123,40 @@ class LibroHandlerModel
         return $prep_query->affected_rows;
     }
 
+    public static function buscarID($id)
+    {
+        $existe=false;
+        $db = DatabaseModel::getInstance();
+        $db_connection = $db->getConnection();
+        $prep_query=$db_connection->prepare("SELECT codigo FROM libros WHERE codigo=?");
+        $prep_query->bind_param('i',$id);
+        $prep_query->execute();
+        $result=$prep_query->get_result();
+        while($row=$result->fetch_assoc())
+        {
+            if(isset($row["codigo"]))
+            {
+                $existe=true;
+            }
+
+        }
+        return $existe;
+    }
+
+    public static function updateLibro(LibroModel $libro)
+    {
+        $db = DatabaseModel::getInstance();
+        $db_connection = $db->getConnection();
+        $titulo=$libro->getTitulo();
+        $numPag=$libro->getNumpag();
+        $codigo=$libro->getCodigo();
+        $prep_query=$db_connection->prepare("Update libros SET titulo=?,numpag=? WHERE codigo=?");
+        $prep_query->bind_param('sii',$titulo,$numPag,$codigo);
+        $prep_query->execute();
+
+        return $prep_query->affected_rows;
+
+    }
 
     //returns true if $id is a valid id for a book
     //In this case, it will be valid if it only contains

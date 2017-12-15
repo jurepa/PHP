@@ -85,4 +85,48 @@ class LibroController extends Controller
         $response->generate();
     }
 
+    public function managePutVerb(Request $request)
+    {
+        $id=null;
+
+        if(isset($request->getUrlElements()[2]))
+        {
+            $id=$request->getUrlElements()[2];
+        }
+        $params_body=$request->getBodyParameters();
+        $libro=new LibroModel($id,$params_body->titulo,$params_body->numpag);
+        if(LibroHandlerModel::buscarID($id))
+        {
+            $filasAfectadas=LibroHandlerModel::updateLibro($libro);
+
+            if($filasAfectadas>0)
+            {
+                $code=204;
+
+            }
+            else
+            {
+                $code=400;
+            }
+
+            $response=new Response($code,null,null,null);
+            $response->generate();
+        }
+        else
+        {
+            $filasAfectadas=LibroHandlerModel::insertLibroConId($libro);
+            if($filasAfectadas>0)
+            {
+                $code=201;
+                $libroInsertado=LibroHandlerModel::getLibro($id);
+                $response=new Response($code,null,$libroInsertado,$request->getAccept());
+            }
+            else
+            {
+                $code=400;
+                $response=new Response($code,null,null,$request->getAccept());
+            }
+            $response->generate();
+        }
+    }
 }

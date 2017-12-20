@@ -114,11 +114,11 @@ class LibroController extends Controller
         }
         else
         {
-            $filasAfectadas=LibroHandlerModel::insertLibroConId($libro);
+            $filasAfectadas=LibroHandlerModel::insertLibro($libro);
             if($filasAfectadas>0)
             {
                 $code=201;
-                $libroInsertado=LibroHandlerModel::getLibro($id);
+                $libroInsertado=LibroHandlerModel::getUltimoLibro();
                 $response=new Response($code,null,$libroInsertado,$request->getAccept());
             }
             else

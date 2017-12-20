@@ -84,7 +84,7 @@ class LibroHandlerModel
         $prep_query->execute();
         return $prep_query->affected_rows;
     }
-    public static function insertLibroConId(LibroModel $libro)
+    /*public static function insertLibroConId(LibroModel $libro)
     {
         $db = DatabaseModel::getInstance();
         $db_connection = $db->getConnection();
@@ -95,7 +95,7 @@ class LibroHandlerModel
         $prep_query->bind_param('isi',$id,$titulo,$numpag);
         $prep_query->execute();
         return $prep_query->affected_rows;
-    }
+    }*/
 
     public static function getUltimoLibro()
     {

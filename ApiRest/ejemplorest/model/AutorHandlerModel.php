@@ -13,8 +13,15 @@ class AutorHandlerModel
         $db = DatabaseModel::getInstance();
         $db_connection = $db->getConnection();
         $nombre=$autor->getNombre();
-        $password=password_hash($autor->getPassword());
-        $tipo=$autor->getTipo();
+        $password=password_hash($autor->getPassword(),PASSWORD_DEFAULT);
+        if($autor->getTipo()==null)
+        {
+            $tipo="";
+        }
+        else
+        {
+            $tipo=$autor->getTipo();
+        }
         $prep_query=$db_connection->prepare("INSERT INTO autores(nombre,password,tipo) VALUES(?,?,?)");
         $prep_query->bind_param('sss',$nombre,$password,$tipo);
         $prep_query->execute();
@@ -30,8 +37,8 @@ class AutorHandlerModel
         $result=$prep_query->get_result();
         while($row=$result->fetch_assoc())
         {
-            $libro=new LibroModel($row["ID"],$row["nombre"],$row["password"],$row["tipo"]);
+            $autor=new AutorModel($row["nombre"],$row["password"],$row["tipo"]);
         }
-        return $libro;
+        return $autor;
     }
 }

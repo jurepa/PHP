@@ -1,5 +1,5 @@
 <?php
-
+require_once "Controller.php";
 /**
  * Created by PhpStorm.
  * User: pjarana
@@ -12,7 +12,11 @@ class AutorController extends Controller
     {
 
         $params_body=$request->getBodyParameters();
-        $autor=new AutorModel($params_body->nombre,$params_body->password,"normal");
+        if($params_body->tipo==null)
+        {
+            $params_body->tipo="normal";
+        }
+        $autor=new AutorModel($params_body->nombre,$params_body->password,$params_body->tipo);
         $exito= AutorHandlerModel::insertAutor($autor);
         if($exito=1)
         {

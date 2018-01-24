@@ -11,12 +11,16 @@ class Request
     private $format;
     //in $accept we store the format of the content that the server will send
     private $accept;
+    private $user;
+    private $password;
 
-    public function __construct($verb, $url_elements, $query_string, $body, $content_type, $accept)
+    public function __construct($verb, $url_elements, $query_string, $body, $content_type, $accept,$user,$password)
     {
         $this->verb = $verb;
         $this->url_elements = $url_elements;
         $this->query_string = $query_string;
+        $this->password=$password;
+        $this->user=$user;
         $this->parseBody($body, $content_type);
 
         switch ($accept) {

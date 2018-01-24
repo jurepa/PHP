@@ -2,7 +2,7 @@
 
 require_once "Request.php";
 require_once "Response.php";
-
+require_once __DIR__."/model/Autenticacion.php";
 //Autoload rules
 spl_autoload_register('apiAutoload');
 function apiAutoload($classname)
@@ -60,25 +60,40 @@ $accept = null;
 if (isset($_SERVER['HTTP_ACCEPT'])) {
     $accept = $_SERVER['HTTP_ACCEPT'];
 }
-
-
-$req = new Request($verb, $url_elements, $query_string, $body, $content_type, $accept);
-
-
-// route the request to the right place
-$controller_name = ucfirst($url_elements[1]) . 'Controller';
-if (class_exists($controller_name)) {
-    $controller = new $controller_name();
-    $action_name = 'manage' . ucfirst(strtolower($verb)) . 'Verb';
-    $controller->$action_name($req);
-    //$result = $controller->$action_name($req);
-    //print_r($result);
-} //If class does not exist, we will send the request to NotFoundController
-else {
-    $controller = new NotFoundController();
-    $controller->manage($req); //We don't care about the HTTP verb
+$user=null;
+if(isset($_SERVER['PHP_AUTH_USER']))
+{
+    $user=$_SERVER['PHP_AUTH_USER'];
+}
+$password=null;
+if(isset($_SERVER['PHP_AUTH_PW']))
+{
+    $password=$_SERVER['PHP_AUTH_PW'];
 }
 
+$req = new Request($verb, $url_elements, $query_string, $body, $content_type, $accept,$user,$password);
+$aut=new Autenticacion($user,$password);
+
+if($aut->getAutenticado()) {
+// route the request to the right place
+    $controller_name = ucfirst($url_elements[1]) . 'Controller';
+    if (class_exists($controller_name)) {
+        $controller = new $controller_name();
+        $action_name = 'manage' . ucfirst(strtolower($verb)) . 'Verb';
+        $controller->$action_name($req);
+        //$result = $controller->$action_name($req);
+        //print_r($result);
+    } //If class does not exist, we will send the request to NotFoundController
+    else {
+        $controller = new NotFoundController();
+        $controller->manage($req); //We don't care about the HTTP verb
+    }
+}
+else
+{
+    $controller=new NotAuthenticatedController();
+    $controller->manage($req);
+}
 //DEBUG / TESTING:
 //echo "<br/>URL_ELEMENTS:" ;
 //print_r ($req->getUrlElements());

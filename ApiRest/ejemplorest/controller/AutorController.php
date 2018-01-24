@@ -16,7 +16,10 @@ class AutorController extends Controller
         {
             $params_body->tipo="normal";
         }
-        $autor=new AutorModel($params_body->nombre,$params_body->password,$params_body->tipo);
+        $nombre=$params_body->nombre;
+        $password=$params_body->password;
+        $tipo=$params_body->tipo;
+        $autor=new AutorModel($nombre,$password,$tipo);
         $exito= AutorHandlerModel::insertAutor($autor);
         if($exito=1)
         {

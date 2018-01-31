@@ -71,6 +71,7 @@ if(isset($_SERVER['PHP_AUTH_PW']))
     $password=$_SERVER['PHP_AUTH_PW'];
 }
 
+
 $req = new Request($verb, $url_elements, $query_string, $body, $content_type, $accept,$user,$password);
 $aut=new Autenticacion($user,$password);
 
@@ -89,7 +90,7 @@ if($aut->getAutenticado()) {
         $controller->manage($req); //We don't care about the HTTP verb
     }
 }
-else
+else if(!$aut->getAutenticado()||$password==null||$user==null)
 {
     $controller=new NotAuthenticatedController();
     $controller->manage($req);

@@ -11,12 +11,18 @@ class Autenticacion
     private $user;
     private $password;
     private $autenticado;
+    private $key="jarana";
+    private $token;
+    private $tokenValidado;
+    private $jwt;
 
-    function  __construct($user,$password)
+    function  __construct($user=null,$password=null)
     {
+
         $this->user=$user;
         $this->password=$password;
         $this->autenticar();
+        $this->generarToken();
     }
 
     function autenticar()
@@ -32,6 +38,36 @@ class Autenticacion
             $this->setAutenticado(true);
         }
     }
+    function generarToken()
+    {
+        $time=time();
+        $this->token=array(
+            'iat'=>$time,
+            'data'=>[
+                'user'=>$this->user,
+                'pass'=>$this->password
+            ]
+        );
+        $this->jwt=\Firebase\JWT\JWT::encode($this->token,$this->key);
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getJwt()
+    {
+        return $this->jwt;
+    }
+
+    /**
+     * @param mixed $jwt
+     */
+    public function setJwt($jwt)
+    {
+        $this->jwt = $jwt;
+    }
+
+
 
     /**
      * @return mixed

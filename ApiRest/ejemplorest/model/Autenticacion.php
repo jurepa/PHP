@@ -1,5 +1,8 @@
 <?php
+use Firebase\JWT\JWT as JWT;
 require_once "AutenticacionHandlerModel.php";
+$upOne=realpath(__DIR__.'/..');
+require_once  $upOne.'/phpjwtmaster/src/JWT.php';
 /**
  * Created by PhpStorm.
  * User: pjarana
@@ -13,21 +16,29 @@ class Autenticacion
     private $autenticado;
     private $key="jarana";
     private $token;
+    private $authtype;
     private $tokenValidado;
     private $jwt;
 
-    function  __construct($user=null,$password=null)
+    function  __construct($user=null,$password=null,$authtype=null,$token=null)
     {
 
         $this->user=$user;
         $this->password=$password;
-        $this->autenticar();
-        $this->generarToken();
+        $this->authtype=$authtype;
+        $this->token=$token;
+        if($this->authtype=="Basic")
+        {
+            $this->autenticar();
+        }
+        else
+        {
+            $this->validarToken();
+        }
     }
 
     function autenticar()
     {
-        $autenticado=false;
         $autor=AutenticacionHandlerModel::getUsuarioPorNombreYContraseña($this);
         if($autor==null||$autor->getTipo()=="normal"||!password_verify($this->password,$autor->getPassword()))
         {
@@ -38,17 +49,18 @@ class Autenticacion
             $this->setAutenticado(true);
         }
     }
-    function generarToken()
+
+    function validarToken()
     {
-        $time=time();
-        $this->token=array(
-            'iat'=>$time,
-            'data'=>[
-                'user'=>$this->user,
-                'pass'=>$this->password
-            ]
-        );
-        $this->jwt=\Firebase\JWT\JWT::encode($this->token,$this->key);
+        try
+        {
+            $data = JWT::decode($this->token, $this->key, array('HS256'));
+            $this->tokenValidado=true;
+        }catch(Exception $exception)
+        {
+            $this->tokenValidado=false;
+        }
+
     }
 
     /**
@@ -115,6 +127,22 @@ class Autenticacion
     public function setAutenticado($autenticado)
     {
         $this->autenticado = $autenticado;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTokenValidado()
+    {
+        return $this->tokenValidado;
+    }
+
+    /**
+     * @param mixed $tokenValidado
+     */
+    public function setTokenValidado($tokenValidado)
+    {
+        $this->tokenValidado = $tokenValidado;
     }
 
 }

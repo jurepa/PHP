@@ -13,8 +13,9 @@ class Request
     private $accept;
     private $user;
     private $password;
+    private $token;
 
-    public function __construct($verb, $url_elements, $query_string, $body, $content_type, $accept,$user,$password)
+    public function __construct($verb, $url_elements, $query_string, $body, $content_type, $accept,$user=null,$password=null)
     {
         $this->verb = $verb;
         $this->url_elements = $url_elements;

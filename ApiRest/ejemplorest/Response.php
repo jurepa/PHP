@@ -8,6 +8,7 @@ class Response
     private $headers;
     private $body;
     private $format;
+    private $token;
 
     // will receive the response code (200 by default), an associative array with the headers, the data for the body,
     // and the format to output the body (retrieved from the request that the client made)
@@ -27,6 +28,8 @@ class Response
 
                 if (!empty($this->body)) {
                     $this->headers['Content-Type'] = "application/json";
+                    $this->generarToken();
+                    $this->headers['Authorization']="Bearer ".$this->token;
                     $this->body = json_encode($this->body);
                 }
                 break;
@@ -57,6 +60,15 @@ class Response
         if (!empty($this->body)) {
             echo $this->body;
         }
+    }
+    function generarToken()
+    {
+        $time=time();
+        $datosToken=array(
+            'exp'=>$time+(60*60),
+            'iat'=>$time
+        );
+        $this->token=JWT::encode($datosToken,$this->key);
     }
 
 

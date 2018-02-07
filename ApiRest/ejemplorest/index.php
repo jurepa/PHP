@@ -35,6 +35,28 @@ function apiAutoload($classname)
     //}
     return $res;
 }
+function getAuthorizationHeader(){
+    $headers = null;
+     if (isset($_SERVER['HTTP_AUTHORIZATION']))
+     {
+        $headers = trim($_SERVER["HTTP_AUTHORIZATION"]);
+     }
+
+    return $headers;
+}
+
+function getBearerToken() {
+    $headers = $this->getAuthorizationHeader();
+    $token=null;
+    if (!empty($headers))
+    {
+        if (preg_match('/Bearer\s(\S+)/', $headers, $matches))
+        {
+            $token=$matches[1];
+        }
+    }
+    return $token;
+}
 
 
 //Let's retrieve all the information from the request
@@ -70,12 +92,20 @@ if(isset($_SERVER['PHP_AUTH_PW']))
 {
     $password=$_SERVER['PHP_AUTH_PW'];
 }
+$authtype=null;
+if(isset($_SERVER['AUTH_TYPE']))
+{
+    $authtype=$_SERVER['AUTH_TYPE'];
+}
+$token=null;
+if($authtype=="Bearer")
+{
+   $token=getBearerToken();
+}
 
-
-$req = new Request($verb, $url_elements, $query_string, $body, $content_type, $accept,$user,$password);
-$aut=new Autenticacion($user,$password);
-
-if($aut->getAutenticado()) {
+$aut=new Autenticacion($user,$password,$authtype,$token);
+$req = new Request($verb, $url_elements, $query_string, $body, $content_type, $accept,$user,$password,$aut->getJwt());
+if($aut->getAutenticado()||$aut->getTokenValidado()) {
 // route the request to the right place
     $controller_name = ucfirst($url_elements[1]) . 'Controller';
     if (class_exists($controller_name)) {

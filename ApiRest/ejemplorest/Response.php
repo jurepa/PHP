@@ -1,5 +1,7 @@
 <?php
-
+use Firebase\JWT\JWT as JWT;
+$upOne=realpath(__DIR__);
+require_once  $upOne.'/phpjwtmaster/src/JWT.php';
 // This class will generate the HTTP headers and the body to send to the client
 class Response
 {
@@ -9,6 +11,7 @@ class Response
     private $body;
     private $format;
     private $token;
+    private $key="jarana";
 
     // will receive the response code (200 by default), an associative array with the headers, the data for the body,
     // and the format to output the body (retrieved from the request that the client made)

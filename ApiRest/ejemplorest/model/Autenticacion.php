@@ -16,18 +16,16 @@ class Autenticacion
     private $autenticado;
     private $key="jarana";
     private $token;
-    private $authtype;
     private $tokenValidado;
     private $jwt;
 
-    function  __construct($user=null,$password=null,$authtype=null,$token=null)
+    function  __construct($user=null,$password=null,$token=null)
     {
 
         $this->user=$user;
         $this->password=$password;
-        $this->authtype=$authtype;
         $this->token=$token;
-        if($this->authtype=="Basic")
+        if($this->user!=null&&$this->password!=null)
         {
             $this->autenticar();
         }

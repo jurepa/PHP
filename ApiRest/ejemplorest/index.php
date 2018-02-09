@@ -37,16 +37,27 @@ function apiAutoload($classname)
 }
 function getAuthorizationHeader(){
     $headers = null;
-     if (isset($_SERVER['HTTP_AUTHORIZATION']))
-     {
+    if (isset($_SERVER['Authorization'])) {
+        $headers = trim($_SERVER["Authorization"]);
+    }
+    else if (isset($_SERVER['HTTP_AUTHORIZATION'])) { //Nginx or fast CGI
         $headers = trim($_SERVER["HTTP_AUTHORIZATION"]);
-     }
+    } elseif (function_exists('apache_request_headers')) {
+        $requestHeaders = apache_request_headers();
+        // Server-side fix for bug in old Android versions (a nice side-effect of this fix means we don't care about capitalization for Authorization)
+        $requestHeaders = array_combine(array_map('ucwords', array_keys($requestHeaders)), array_values($requestHeaders));
+        //print_r($requestHeaders);
+        if (isset($requestHeaders['Authorization'])) {
+            $headers = trim($requestHeaders['Authorization']);
+        }
+    }
 
     return $headers;
 }
 
 function getBearerToken() {
-    $headers = $this->getAuthorizationHeader();
+
+    $headers =     getAuthorizationHeader();
     $token=null;
     if (!empty($headers))
     {
@@ -92,22 +103,22 @@ if(isset($_SERVER['PHP_AUTH_PW']))
 {
     $password=$_SERVER['PHP_AUTH_PW'];
 }
-$authtype=null;
+/*$authtype=null;
 if(isset($_SERVER['AUTH_TYPE']))
 {
     $authtype=$_SERVER['AUTH_TYPE'];
-}
+}*/
 $token=null;
-if($authtype=="Bearer")
+if($password==null&&$user==null)
 {
    $token=getBearerToken();
 }
 
-$aut=new Autenticacion($user,$password,$authtype,$token);
+$aut=new Autenticacion($user,$password,$token);
 $req = new Request($verb, $url_elements, $query_string, $body, $content_type, $accept,$user,$password,$aut->getJwt());
 if($aut->getAutenticado()||$aut->getTokenValidado()) {
 // route the request to the right place
-    $controller_name = ucfirst($url_elements[1]) . 'Controller';
+    $controller_name = ucfirst($url_elements[1]) .'Controller';
     if (class_exists($controller_name)) {
         $controller = new $controller_name();
         $action_name = 'manage' . ucfirst(strtolower($verb)) . 'Verb';

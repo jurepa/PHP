@@ -57,7 +57,7 @@ function getAuthorizationHeader(){
 
 function getBearerToken() {
 
-    $headers =     getAuthorizationHeader();
+    $headers = getAuthorizationHeader();
     $token=null;
     if (!empty($headers))
     {

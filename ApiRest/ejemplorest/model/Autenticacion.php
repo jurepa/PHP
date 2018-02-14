@@ -3,6 +3,9 @@ use Firebase\JWT\JWT as JWT;
 require_once "AutenticacionHandlerModel.php";
 $upOne=realpath(__DIR__.'/..');
 require_once  $upOne.'/phpjwtmaster/src/JWT.php';
+require_once  $upOne.'/phpjwtmaster/src/SignatureInvalidException.php';
+require_once  $upOne.'/phpjwtmaster/src/BeforeValidException.php';
+require_once  $upOne.'/phpjwtmaster/src/ExpiredException.php';
 /**
  * Created by PhpStorm.
  * User: pjarana

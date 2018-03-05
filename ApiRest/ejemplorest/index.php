@@ -114,9 +114,9 @@ if($password==null&&$user==null)
    $token=getBearerToken();
 }
 
-$aut=new Autenticacion($user,$password,$token);
-$req = new Request($verb, $url_elements, $query_string, $body, $content_type, $accept,$user,$password,$aut->getJwt());
-if($aut->getAutenticado()||$aut->getTokenValidado()) {
+//$aut=new Autenticacion($user,$password,$token);
+$req = new Request($verb, $url_elements, $query_string, $body, $content_type, $accept,$user,$password);
+//if($aut->getAutenticado()||$aut->getTokenValidado()) {
 // route the request to the right place
     $controller_name = ucfirst($url_elements[1]) .'Controller';
     if (class_exists($controller_name)) {
@@ -130,12 +130,12 @@ if($aut->getAutenticado()||$aut->getTokenValidado()) {
         $controller = new NotFoundController();
         $controller->manage($req); //We don't care about the HTTP verb
     }
-}
+/*}
 else if(!$aut->getAutenticado()||$password==null||$user==null)
 {
     $controller=new NotAuthenticatedController();
     $controller->manage($req);
-}
+}*/
 //DEBUG / TESTING:
 //echo "<br/>URL_ELEMENTS:" ;
 //print_r ($req->getUrlElements());

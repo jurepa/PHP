@@ -8,11 +8,11 @@
  */
 class AutorModel
 {
-    private $nombre;
-    private $password;
-    private $tipo;
+    public $nombre;
+    public $password;
+    public $tipo;
 
-    public function __construct($nombre,$password,$tipo)
+    public function __construct($nombre=null,$password=null,$tipo=null)
     {
         $this->nombre=$nombre;
         $this->password=$password;

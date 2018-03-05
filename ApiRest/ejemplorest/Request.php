@@ -23,7 +23,6 @@ class Request
         $this->password=$password;
         $this->user=$user;
         $this->parseBody($body, $content_type);
-
         switch ($accept) {
             case 'application/json':
             case '*/*':

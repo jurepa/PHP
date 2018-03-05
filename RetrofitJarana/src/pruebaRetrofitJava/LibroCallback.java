@@ -37,7 +37,7 @@ public class LibroCallback implements Callback<Libro>{
 	message = resp.message();
 	isSuccesful = resp.isSuccessful();
 	
-	System.out.println(libro.getId()+" "+libro.getTitulo()+" "+libro.getNumpag());
+	//System.out.println(libro.getId()+" "+libro.getTitulo()+" "+libro.getNumpag());
 
     
 

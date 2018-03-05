@@ -1,6 +1,8 @@
 package pruebaRetrofitJava;
 
 import java.io.IOException;
+import java.util.Scanner;
+
 import com.google.gson.Gson;
 import okio.*;
 import retrofit2.Call;
@@ -14,14 +16,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 
 /***************************************
- * SE PUEDEN DESCARGAR JARS DE CONVERTIDORES DE AQUÍ:
- * http://search.maven.org/
- * 
- * Por ejemplo:
- * http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.squareup.retrofit2%22
- * 
- * Si usamos gradle, simplemente añadiríamos la dependencia:
- * com.squareup.retrofit2:converter-gson/home/migue/Descargas/converter-gson-2.1.0.jar
+
+ README:
+
+ - No realiza la petición, entra en el onFailure. Algo de la URL está mal
  *
  */
 
@@ -29,13 +27,24 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Principal {
 	
-	private final static String SERVER_URL = "http://lumenrest.dev";
+	private final static String SERVER_URL = "https://putsreq.com";
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+		Scanner teclado=new Scanner(System.in);
+		int numMinPags,numMaxPags=0;
+		do {
+			System.out.println("Introduce un número mínimo de páginas");
+			numMinPags = teclado.nextInt();
+		}while(numMinPags<=0);
+		do{
+			System.out.println("Introduce un número máximo de páginas");
+			numMaxPags=teclado.nextInt();
+		}while (numMaxPags<=0);
+
 		Retrofit retrofit;
-		LibroCallback libroCallback = new LibroCallback();
+		ListLibroQueryCallback callback= new ListLibroQueryCallback();
+
 		
 		retrofit = new Retrofit.Builder()
 							   .baseUrl(SERVER_URL)
@@ -44,7 +53,8 @@ public class Principal {
 		
 		LibroInterface libroInter = retrofit.create(LibroInterface.class);
 		
-		libroInter.getLibro(1).enqueue(libroCallback);
+		libroInter.getListLibroQuery(numMinPags,numMaxPags).enqueue(callback);
+
 		
 
 	}
